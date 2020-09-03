@@ -9,13 +9,13 @@ O repositório tem como objetivo é testar e automatizar o login de um site qual
 2. Instalar o NODE.js
 
 3. Instalar o Cypress
->> npm install --save-dev cypress cypress-cucumber-preprocessor
+> npm install --save-dev cypress cypress-cucumber-preprocessor
 
 4. Iniciar o cypress
 
->> npx cypress open
+> npx cypress open
 
 ### Iniciando o teste
 
 No terminal colacar
->> npm run test:chrome
+> npm run test:chrome
