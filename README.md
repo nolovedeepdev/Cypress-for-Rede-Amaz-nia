@@ -3,8 +3,9 @@ O repositório tem como objetivo é testar e automatizar o login de um site qual
 
 ## Uso
 
-### Para iniciar a o repositório
-1. abrir o diretório arquivo
+### Para iniciar o repositório
+
+1. abrir o diretório do arquivo
 
 2. Instalar o NODE.js
 
@@ -17,5 +18,5 @@ O repositório tem como objetivo é testar e automatizar o login de um site qual
 
 ### Iniciando o teste
 
-No terminal colacar
+No terminal digitar:
 > npm run test:chrome
