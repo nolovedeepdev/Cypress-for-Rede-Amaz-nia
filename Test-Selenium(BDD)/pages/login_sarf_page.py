@@ -7,10 +7,9 @@ from browser import Browser
 class sarfPageLocator(object):
     # Seletores dos elementos utilizados na página
     INPUT_CPF = '[name="j_username"]'
-    BUTTON_CPF = 'ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all'
-    INPUT_PASSWORD = 'j_password'
-    BUTTON_PASSWORD ='ui-inputfield ui-password ui-widget ui-state-default ui-corner-all'
-    TITLE_RESULTADO = 'ui-messages-error-summary'
+    INPUT_PASSWORD = '[name="j_password"]'
+    BUTTON_LOGIN = '[name="j_idt17"]'
+    TITLE_RESULTADO = '[id="j_idt18"]'
 
 
 class sarfPage(Browser):
@@ -24,24 +23,19 @@ class sarfPage(Browser):
         # acessa url passada
         self.driver.get(url)
 
-    def send_keys_input_pesquisa(self):
-        # envia para o elemento o texto 'Python'
-        input_pesquisa = self.get_element(sarfPageLocator.INPUT_CPF)
-        input_pesquisa.send_keys('Python')
+    def send_keys_input_cpf(self):
+        # envia para o elemento o texto o cpf falso
+        input_cpf = self.get_element(sarfPageLocator.INPUT_CPF)
+        input_cpf.send_keys('11111111111')
 
-    def click_button_pesquisar(self):
-        # clica no botão de pesquisar
-        button = self.get_element(sarfPageLocator.BUTTON_CPF)
-        button.click()
+    def send_keys_input_password(self):
+        # envia para o elemento o texto o cpf falso
+        input_password = self.get_element(sarfPageLocator.INPUT_PASSWORD)
+        input_password.send_keys('1111111')
 
-    def send_keys_input_pesquisa(self):
-        # envia para o elemento o texto 'Python'
-        input_pesquisa = self.get_element(sarfPageLocator.INPUT_PASSWORD)
-        input_pesquisa.send_keys('Python')
-
-    def click_button_pesquisar(self):
-        # clica no botão de pesquisar
-        button = self.get_element(sarfPageLocator.BUTTON_PASSWORD)
+    def click_button_login(self):
+        # clica no botão de Login
+        button = self.get_element(sarfPageLocator.BUTTON_LOGIN)
         button.click()
 
     def get_text_title_resultado(self):
