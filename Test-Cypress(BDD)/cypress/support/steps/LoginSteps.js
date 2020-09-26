@@ -4,18 +4,17 @@ Ex.: HomeElements.js, PdpElements.js, CheckoutElements.js.
 */
 
 /* global Given, Then, When */
+import LoginPage from '../pageobjects/LoginPage'
+const loginPage = new LoginPage
 
-import ExemploPage1 from '../pageobjects/ExemploPage1'
-const ExemploPage1 = new ExemploPage1
-
-Given("acesso o site CWI", () => {
-    ExemploPage1.acessarSite();
+Given("acesso o site sarf", () => {
+    loginPage.acessarSite();
 })
 
 When("acesso a pagina de login", () => {
-    ExemploPage1.clicarBotaoPaginaLogin();
+    loginPage.clicarBotaoPaginaLogin();
 })
 
-Then("devo visualizar botao de recuperar senha esquecida", () => {
-    ExemploPage1.visualizarBotaoRecuperarSenha();
+Then("devo visualizar Usuário ou Senha Inválido(s)", () => {
+    loginPage.visualizarBotaoRecuperarSenha();
 })

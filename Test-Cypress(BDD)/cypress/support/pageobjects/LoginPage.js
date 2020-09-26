@@ -7,11 +7,11 @@ Ex.: HomePage.js, PdpPage.js, Checkout.js.
 
 /// <reference types="Cypress" />
 
-import ExemploPage1Elements from '../elements/LoginElements'
-const ExemploPage1Elements = new LoginElements
+import LoginElements from '../elements/LoginElements'
+const loginElements = new LoginElements
 const url = Cypress.config("baseUrl")
 
-class LoginPage {
+class loginPage {
     // Acessa o site que será testado
     acessarSite() {
         cy.visit(url)
@@ -22,10 +22,6 @@ class LoginPage {
         cy.get(loginElements.botaoLogin()).click()
     }
   
-    // Verifica se o botão tem o texto "Esqueceu sua senha?"
-    visualizarBotaoRecuperarSenha() {
-        cy.get(loginElements.botaoRecuperarSenha()).should('contain', 'Esqueceu sua senha?')
-    }
 }
 
-export default ExemploPage1;
+export default loginPage;
