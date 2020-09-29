@@ -9,15 +9,15 @@ Baixar o chromedriver.exe no seu sistema para garantir uma melhor funcionamento
 Entrar no modo virtualenv do python:
 
 Para Linux e Mac:
->> nome_da_virtualenv/bin/activate 
+> nome_da_virtualenv/bin/activate 
 
 Para Windows:
->> nome_da_virtualenv/Scripts/Activate
+> nome_da_virtualenv/Scripts/Activate
 
 ## 3º Passo 
 
 Digitar o comando 
 
->> python start.py
+> python start.py
 
 no terminal para rodar o teste
