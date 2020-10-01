@@ -14,10 +14,18 @@ Para Linux e Mac:
 Para Windows:
 > nome_da_virtualenv/Scripts/Activate
 
+
 ## 3º Passo 
 
+Instalar o Selenium e mais outras bibliotecas
+
+> pip install selenium
+> pip install behave
+> pip install nose
+
+## 4º Passo
 Digitar o comando 
 
-> python start.py
+> behave
 
 no terminal para rodar o teste
